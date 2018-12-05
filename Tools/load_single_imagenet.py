@@ -15,7 +15,7 @@ import numpy as np
 # tags = '/home/tomas/Documents/Inteligencia Computacional/tiny-imagenet-200/words.txt'
 # images = '/home/tomas/Documents/Inteligencia Computacional/Proyecto/fall11_urls.txt'
 # images_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/ILSVRC2012Val'
-# tags_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/val.txt'
+tags_val = 'AdversarialData/val.txt'
 # tags_names = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/synset_words.txt'
 adversarial = 'AdversarialData/Adversarios/'
 
@@ -123,15 +123,15 @@ def n_images_validation(n_ini, n_fin, height, width):
     imgpaths = []
     for i in np.arange(n_ini, n_fin):
         n_padded = (str(i + 1)).rjust(5, '0')
-        imgpaths.append(images_val+'/ILSVRC2012_val_000'+ n_padded +'.JPEG')
+        #imgpaths.append(images_val+'/ILSVRC2012_val_000'+ n_padded +'.JPEG')
     size = (height, width)
     identifiers = []
     clases = []
     images = []
 
-    for i in range(len(imgpaths)):
-        img = image.load_img(imgpaths[i], target_size=size)
-        images.append(img)
+    #for i in range(len(imgpaths)):
+    #   img = image.load_img(imgpaths[i], target_size=size)
+    #   images.append(img)
 
     with open(tags_val) as tags:
         for i, line in enumerate(tags):
