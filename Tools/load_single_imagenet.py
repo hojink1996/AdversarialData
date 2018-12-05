@@ -88,7 +88,6 @@ def single_img_val(n, height, width):
     :return:    A tuple with the images scaled to size, its tag and the identifier
     """
     n_padded = (str(n)).rjust(5, '0')
-    imgpath = images_val+'/ILSVRC2012_val_000'+ n_padded +'.JPEG'
     size = (height, width)
     identifier = ''
     clase = ''
