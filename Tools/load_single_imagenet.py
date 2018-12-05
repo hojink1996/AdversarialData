@@ -17,7 +17,7 @@ import numpy as np
 # images_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/ILSVRC2012Val'
 # tags_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/val.txt'
 # tags_names = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/synset_words.txt'
-adversarial = 'AdversarialData/Adversarios'
+adversarial = 'AdversarialData/Adversarios/'
 
 
 def single_img(n, height, width):
