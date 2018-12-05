@@ -16,7 +16,7 @@ import numpy as np
 # images = '/home/tomas/Documents/Inteligencia Computacional/Proyecto/fall11_urls.txt'
 # images_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/ILSVRC2012Val'
 tags_val = 'AdversarialData/val.txt'
-# tags_names = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/synset_words.txt'
+tags_names = 'AdversarialData/synset_words.txt'
 adversarial = 'AdversarialData/Adversarios/'
 
 
