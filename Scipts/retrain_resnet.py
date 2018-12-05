@@ -11,7 +11,7 @@ from Tools.retrain_adversarial import expected_answers
 from Tools.load_single_imagenet import n_arrays_adversarial
 
 # Path to answers
-path = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/val.txt'
+path = 'AdversarialData/val.txt'
 
 # Variables para reentrenar
 n_epochs = 1
