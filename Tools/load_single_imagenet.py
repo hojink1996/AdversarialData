@@ -10,14 +10,14 @@ import urllib.request
 import numpy as np
 
 # Path to tags and images
-tags = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/tiny-imagenet-200/words.txt'
-images ='/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/fall11_urls.txt'
+# tags = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/tiny-imagenet-200/words.txt'
+# images ='/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/fall11_urls.txt'
 # tags = '/home/tomas/Documents/Inteligencia Computacional/tiny-imagenet-200/words.txt'
 # images = '/home/tomas/Documents/Inteligencia Computacional/Proyecto/fall11_urls.txt'
-images_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/ILSVRC2012Val'
-tags_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/val.txt'
-tags_names = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/synset_words.txt'
-adversarial = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/Adversarios/'
+# images_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/ILSVRC2012Val'
+# tags_val = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/val.txt'
+# tags_names = '/home/hojin/Documentos/Primavera 2018/Inteligencia/Proyecto/synset_words.txt'
+adversarial = 'AdversarialData/Adversarios'
 
 
 def single_img(n, height, width):
