@@ -123,15 +123,10 @@ def n_images_validation(n_ini, n_fin, height, width):
     imgpaths = []
     for i in np.arange(n_ini, n_fin):
         n_padded = (str(i + 1)).rjust(5, '0')
-        #imgpaths.append(images_val+'/ILSVRC2012_val_000'+ n_padded +'.JPEG')
     size = (height, width)
     identifiers = []
     clases = []
     images = []
-
-    #for i in range(len(imgpaths)):
-    #   img = image.load_img(imgpaths[i], target_size=size)
-    #   images.append(img)
 
     with open(tags_val) as tags:
         for i, line in enumerate(tags):
