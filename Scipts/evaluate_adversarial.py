@@ -4,12 +4,12 @@ Script that evaluates the Accuracy of the Model over the Adversarial Examples.
 Authors: Hojin Kang and Tomas Nunez
 """
 
-from Tools.load_single_imagenet import n_images_validation, n_images_adversarial
+from AdversarialData.Tools.load_single_imagenet import n_images_validation, n_images_adversarial
 import numpy as np
 from keras.applications import resnet50
 from keras.preprocessing import image
 
-from Tools.evaluate import eval_top5, eval_top1
+from AdversarialData.Tools.evaluate import eval_top5, eval_top1
 
 
 # Save the top 5 predictions for each example
@@ -17,14 +17,14 @@ top5_pred_normal = []
 top1_pred_normal = []
 
 # Number of images
-n_images = 450
+n_images = 5000
 
 # Load the model
-resnet_model = resnet50.ResNet50(weights='imagenet')
+resnet_model = load_model('weights.best.hdf5')
 
 # Get the original classes and the adversarial images
 _ , clases, identifiers = n_images_validation(0, n_images, 224, 224)
-images = n_images_adversarial(0, 450, 224, 224)
+images = n_images_adversarial(0, 5000, 224, 224)
 
 # Loop over the images
 for img in images:
